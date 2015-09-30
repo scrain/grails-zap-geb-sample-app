@@ -22,7 +22,8 @@ grails.project.dependency.resolution = {
         inherits true // Whether to inherit repository definitions from plugins
         grailsPlugins()
         grailsHome()
-        grailsCentral()
+        // grailsCentral()
+        mavenRepo "https://repo.grails.org/grails/plugins"
         mavenCentral()
 
         // uncomment these to enable remote dependency resolution from public Maven repositories
