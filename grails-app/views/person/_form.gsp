@@ -8,21 +8,24 @@
 		
 	</label>
 	<g:checkBox name="enabled" value="${personInstance?.enabled}" />
+
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'firstName', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'firstName', 'error')} required">
 	<label for="firstName">
 		<g:message code="person.firstName.label" default="First Name" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="firstName" value="${personInstance?.firstName}"/>
+	<g:textField name="firstName" required="" value="${personInstance?.firstName}"/>
+
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'lastName', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'lastName', 'error')} required">
 	<label for="lastName">
 		<g:message code="person.lastName.label" default="Last Name" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="lastName" value="${personInstance?.lastName}"/>
+	<g:textField name="lastName" required="" value="${personInstance?.lastName}"/>
+
 </div>
 

@@ -3,7 +3,7 @@ package pages
 import geb.Module
 
 class ListPage extends ScaffoldPage {
-	static url = "person/list"
+	static url = "person/index"
 	
 	static at = {
 		title ==~ /Person List/
